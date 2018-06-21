@@ -6,6 +6,10 @@ class GamesController < ApplicationController
     render json: @game if @game.save
   end
 
+  def show
+    binding.pry
+  end
+
   private
 
   def game_params
