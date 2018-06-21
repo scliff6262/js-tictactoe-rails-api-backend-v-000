@@ -1,4 +1,6 @@
 class GamesController < ApplicationController
+  before_action :set_game
+
   def create
 
   end
