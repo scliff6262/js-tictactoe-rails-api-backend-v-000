@@ -10,6 +10,10 @@ class GamesController < ApplicationController
     render json: @game
   end
 
+  def update
+    binding.pry
+  end
+
   private
 
   def game_params
