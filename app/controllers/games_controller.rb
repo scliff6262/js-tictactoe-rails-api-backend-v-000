@@ -8,4 +8,8 @@ class GamesController < ApplicationController
   def game_params
     params.require(:product).permit(:state)
   end
+
+  def set_game
+    @game = Game.create(product_params)
+  end
 end
