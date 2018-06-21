@@ -3,7 +3,7 @@ class GamesController < ApplicationController
 
   def create
     binding.pry
-    @game = Game.create(game_params)
+    @game = Game.create(state: game_params)
     render json: @game if @game.save
   end
 
