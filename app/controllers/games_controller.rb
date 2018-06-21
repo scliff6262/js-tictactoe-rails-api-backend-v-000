@@ -2,7 +2,7 @@ class GamesController < ApplicationController
   #before_action :set_game
 
   def create
-    @game
+    @game = Game.create(game_params)
   end
 
   private
