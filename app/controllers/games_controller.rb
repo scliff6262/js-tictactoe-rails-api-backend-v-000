@@ -11,7 +11,6 @@ class GamesController < ApplicationController
   end
 
   def update
-    binding.pry
     @game.update(state: game_params)
     render json: @game if @game.save
   end
