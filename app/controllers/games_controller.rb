@@ -15,6 +15,11 @@ class GamesController < ApplicationController
     render json: @game if @game.save
   end
 
+  def index
+    @games = Game.all
+    render json: @games
+  end
+
   private
 
   def game_params
